@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ホタル国(架空)</title>
+    <style>
+        body {
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+            color: #e0f8d3;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 3em;
+        }
+        .news-marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-top: 30px;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+        }
+        .news-marquee span {
+            display: inline-block;
+            animation: blink 1.5s infinite, moveLeft 10s linear infinite;
+        }
+        @keyframes blink {
+            0% { color: green; }
+            50% { color: yellow; }
+            100% { color: red; }
+        }
+        @keyframes moveLeft {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            animation: rotateFooter 10s linear infinite;
+        }
+        @keyframes rotateFooter {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        /* 木角丸ボタン */
+        .btn-wood-rounded {
+            background-color: #8b4513; /* 木の色 */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 15px; /* 角丸 */
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 0;
+        }
+        .btn-wood-rounded:hover {
+            background-color: #6a3f1f; /* ホバー時の色 */
+        }
+    </style>
+</head>
+<body>
+
+<h1>ホタル国へようこそ！</h1>
+
+<div class="news-marquee">
+    <span>新しい更新があります！次のイベントをチェックしてください！</span>
+    <p>2024/10/18 hotarphon 18 発売！</p>
+</div>
+
+<!-- 木角丸ボタン -->
+<a href="hotaru_kuni_details.html" class="btn-wood-rounded">ホタル国の詳細情報</a>
+
+<footer>
+    <p>ホタル国公式サイト | すべての権利を保有</p>
+</footer>
+
+</body>
+</html>
